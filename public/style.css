@@ -1,0 +1,139 @@
+*, *::before, *::after{
+	margin: 0;
+	font-family: consolas;
+	font-size: 14px;
+	padding: 0;
+	color: #fff;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body{
+	width: 100vw;
+	min-height: 600px;
+	background-color: #011A27;
+}
+.symbol, .atomic-no, .atomic-mass{
+	font-size: .7rem;
+}
+
+.name{
+	font-size: .75rem;
+}
+
+.periodic-table{
+	margin-top: 3rem;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* s-block styles */
+.periodic-table .s-block{
+	display:  grid;
+	width: 165px;
+	grid-template-columns: 1fr 1fr;
+}
+
+.periodic-table .s-block .alkali-metals .group-div,
+.periodic-table .s-block .alkaline-earth-metals .group-div{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+.periodic-table .s-block .alkaline-earth-metals{
+	position: relative;
+	top: 5rem;
+	left: -1rem;
+}
+
+.element{
+	width: 70px;
+	height: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.s-block .element{
+	background-color: brown;
+	border: 2px solid green;
+}
+/* end of s-block elements styles */
+
+
+/* for transiton elements style */
+.periodic-table .d-block .group-div{
+	display:  grid;
+	position: relative;
+	top: 15rem;
+	left: -1.83rem;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.d-block .element{
+	background-color: red;
+	border: 2px solid seagreen;
+}
+/* end of transition elements styles */
+
+
+/* styles for p-block elements */
+.periodic-table .p-block{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	position: relative;
+	top: 5rem;
+	left: -1.9rem
+}
+/* lifting group eight elements up */
+
+
+.periodic-table .p-block .group-eight{
+	position: relative;
+	top: -5rem
+}
+
+.p-block .element{
+	background: coral;
+	border: 2px solid lightseagreen;
+}
+
+/* end of pblock element style */
+
+
+
+/* styling for f-block elements*/
+.periodic-table .f-block{
+	display: grid;
+	position: absolute;
+	top: 39rem;
+	left: 1.83rem;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+.periodic-table .f-block .lanathides .group-div, .periodic-table .f-block .actinides .group-div{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.f-block .element{
+	background: maroon;
+	border: 2px solid mediumblue;
+}
+
+/* coloring elements based on their properties */
+.Non-Metal{
+	background: lightblue !important;
+}
+.Semi-Conductor{
+	background: lightcoral !important;
+}
+
+.liquid{
+	border-color: aqua !important
+}
